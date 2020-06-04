@@ -1,0 +1,10 @@
+platina-mk1-ttys*.build
+platina-mk1-ttys*.buildinfo
+platina-mk1-ttys*.changes
+platina-mk1-ttys*.deb
+debian/debhelper-build-stamp
+debian/files
+debian/platina-mk1-ttys/
+debian/*.debhelper
+debian/*.log
+debian/*.substvars

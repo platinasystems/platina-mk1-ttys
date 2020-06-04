@@ -1,0 +1,9 @@
+The Debian Package platina-mk1-ttys
+----------------------------
+
+Comments regarding the Package
+
+This package enables agetty on ttyS1. This is used for the serial link
+from the BMC to the x86 daughter card.
+
+-- Kevin Paul Herbert <kph@platinasystems.com>  Fri, 29 May 2020 09:48:53 -0700
