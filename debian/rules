@@ -4,16 +4,14 @@
 #export DH_VERBOSE = 1
 
 %:
-	dh $@ --with=systemd
+	dh $@ --with systemd
 
 
 override_dh_installinit:
-	dh_installinit -pplatina-mk1-ttys --name=serial-getty@ttyS1
+	dh_installinit -pplatina-mk1-ttys
 
 override_dh_systemd_enable:
-	dh_systemd_enable -pplatina-mk1-ttys --name=serial-getty@ttyS1
+	dh_systemd_enable -pplatina-mk1-ttys
 
 override_dh_systemd_start:
-	dh_systemd_start -pplatina-mk1-ttys serial-getty@ttyS1.service
-
-
+	dh_systemd_start -pplatina-mk1-ttys

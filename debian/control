@@ -2,7 +2,7 @@ Source: platina-mk1-ttys
 Section: admin
 Priority: optional
 Maintainer: Kevin Paul Herbert <kph@platinasystems.com>
-Build-Depends: debhelper (>= 10)
+Build-Depends: debhelper (>= 10), dh-systemd
 Standards-Version: 3.9.8
 Homepage: https://github.com/platinasystems/platina-mk1-ttys
 Vcs-Git: https://github.com/platinasystems/platina-mk1-ttys.git

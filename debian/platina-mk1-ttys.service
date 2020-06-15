@@ -6,11 +6,11 @@
 #  (at your option) any later version.
 
 [Unit]
-Description=Serial Getty on %I
+Description=Serial Getty on ttyS1
 Documentation=man:agetty(8) man:systemd-getty-generator(8)
 Documentation=http://0pointer.de/blog/projects/serial-console.html
-BindsTo=dev-%i.device
-After=dev-%i.device systemd-user-sessions.service plymouth-quit-wait.service
+BindsTo=dev-ttyS1.device
+After=dev-ttyS1.device systemd-user-sessions.service plymouth-quit-wait.service
 After=rc-local.service
 
 # If additional gettys are spawned during boot then we should make
@@ -20,11 +20,11 @@ Before=getty.target
 IgnoreOnIsolate=yes
 
 [Service]
-ExecStart=-/sbin/agetty 57600 %I $TERM
+ExecStart=-/sbin/agetty 57600 ttyS1 $TERM
 Type=idle
 Restart=always
-UtmpIdentifier=%I
-TTYPath=/dev/%I
+UtmpIdentifier=ttyS1
+TTYPath=/dev/ttyS1
 TTYReset=yes
 TTYVHangup=yes
 KillMode=process
@@ -32,4 +32,5 @@ IgnoreSIGPIPE=no
 SendSIGHUP=yes
 
 [Install]
+Alias=serial-getty@ttyS1.service
 WantedBy=getty.target
