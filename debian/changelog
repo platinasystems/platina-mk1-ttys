@@ -1,8 +1,9 @@
-platina-mk1-ttys (2.1~alpha.0) UNRELEASED; urgency=medium
+platina-mk1-ttys (2.1.0) stretch; urgency=medium
 
-  * UNRELEASED
+  * Release 2.1.0
+  * platina-mk1-ttys: Add a unit file for /dev/ttyS0
 
- -- Kevin Paul Herbert <kph@platinasystems.com>  Tue, 23 Jun 2020 11:20:30 -0600
+ -- Kevin Paul Herbert <kph@platinasystems.com>  Wed, 23 Sep 2020 09:38:40 -0700
 
 platina-mk1-ttys (2.0.0) stretch; urgency=medium
 
