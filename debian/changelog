@@ -1,3 +1,9 @@
+platina-mk1-ttys (2.1.1) UNRELEASED; urgency=medium
+
+  * platina-mk1-ttys: Disable generator; use proper service names
+
+ -- Kevin Paul Herbert <kph@platinasystems.com>  Thu, 24 Sep 2020 23:21:05 -0700
+
 platina-mk1-ttys (2.1.0) stretch; urgency=medium
 
   * Release 2.1.0
