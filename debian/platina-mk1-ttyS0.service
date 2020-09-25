@@ -32,5 +32,4 @@ IgnoreSIGPIPE=no
 SendSIGHUP=yes
 
 [Install]
-Alias=serial-getty@ttyS0.service
 WantedBy=getty.target
