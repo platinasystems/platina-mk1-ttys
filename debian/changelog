@@ -1,3 +1,9 @@
+platina-mk1-ttys (2.1.5) stretch; urgency=medium
+
+  * platina-mk1-ttys: Ignore systemctl errors removing legacy service
+
+ -- Kevin Paul Herbert <kph@platinasystems.com>  Tue, 28 Jan 2021 09:36:46 -0700
+
 platina-mk1-ttys (2.1.4) stretch; urgency=medium
 
   * platina-mk1-ttys: Clean up legacy ttyS1.service
